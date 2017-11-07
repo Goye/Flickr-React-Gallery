@@ -22,6 +22,7 @@
     "eslint-plugin-flowtype": "2.35.0",
     "eslint-plugin-import": "2.7.0",
     "eslint-plugin-jsx-a11y": "5.1.1",
+    "eslint-plugin-prettier": "^2.3.1",
     "eslint-plugin-react": "7.1.0",
     "extract-text-webpack-plugin": "3.0.0",
     "file-loader": "0.11.2",
@@ -54,16 +55,27 @@
     "node": "6.x"
   },
   "babel": {
-    "presets": ["react-app"]
+    "presets": [
+      "react-app"
+    ]
   },
   "eslintConfig": {
     "extends": "react-app",
-    "plugins": ["react", "prettier"],
+    "plugins": [
+      "react",
+      "prettier"
+    ],
     "rules": {
       "space-before-blocks": "error",
-      "semi": ["error", "always"],
+      "semi": [
+        "error",
+        "always"
+      ],
       "arrow-spacing": "error",
-      "comma-dangle": ["error", "always-multiline"],
+      "comma-dangle": [
+        "error",
+        "always-multiline"
+      ],
       "comma-spacing": "error",
       "comma-style": "error",
       "eqeqeq": "error",
@@ -76,13 +88,19 @@
         }
       ],
       "key-spacing": "error",
-      "linebreak-style": ["error", "unix"],
+      "linebreak-style": [
+        "error",
+        "unix"
+      ],
       "no-console": "off",
       "no-param-reassign": "error",
       "no-tabs": "error",
       "no-trailing-spaces": "error",
       "no-whitespace-before-property": "error",
-      "quotes": ["error", "single"],
+      "quotes": [
+        "error",
+        "single"
+      ],
       "no-unused-vars": [
         "error",
         {
@@ -91,9 +109,18 @@
       ],
       "react/display-name": "off",
       "react/prop-types": "off",
-      "jsx-quotes": ["error", "prefer-double"],
-      "react/jsx-curly-spacing": ["error", "never"],
-      "react/jsx-boolean-value": ["error", "always"],
+      "jsx-quotes": [
+        "error",
+        "prefer-double"
+      ],
+      "react/jsx-curly-spacing": [
+        "error",
+        "never"
+      ],
+      "react/jsx-boolean-value": [
+        "error",
+        "always"
+      ],
       "react/self-closing-comp": [
         "error",
         {
@@ -109,7 +136,10 @@
           "allowBind": false
         }
       ],
-      "react/require-render-return": ["error", "always"],
+      "react/require-render-return": [
+        "error",
+        "always"
+      ],
       "react/no-is-mounted": "error",
       "react/jsx-wrap-multilines": [
         "error",
