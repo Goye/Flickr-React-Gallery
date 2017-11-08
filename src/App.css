@@ -1,6 +1,6 @@
 .carousel {
   display: block;
-  width: 90%;
+  width: 70%;
   margin: 0 auto;
   position: relative;
   padding-top: 40px;
@@ -10,7 +10,7 @@
 .carouselInner {
   margin: 0 auto;
   float: none;
-  width: 82%;
+  width: 90%;
   display: block;
   position: relative;
 }

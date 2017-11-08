@@ -44,7 +44,10 @@
     "whatwg-fetch": "2.0.3"
   },
   "scripts": {
-    "start": "node scripts/start.js"
+    "start": "node scripts/start.js",
+    "test": "wdio wdio.conf.js",
+    "selenium": "selenium-standalone start",
+    "selenium:install": "selenium-standalone install"
   },
   "seedConfig": {
     "port": 3000
@@ -147,5 +150,13 @@
       ],
       "no-var": "warn"
     }
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1",
+    "selenium-standalone": "^6.11.0",
+    "wdio-mocha-framework": "^0.5.11",
+    "wdio-spec-reporter": "^0.1.2",
+    "webdriverio": "^4.8.0"
   }
 }

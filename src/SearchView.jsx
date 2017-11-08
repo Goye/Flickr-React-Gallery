@@ -17,7 +17,7 @@ class SearchView extends Component {
     render() {
         const { valueToSearch } = this.state;
         return (
-            <div className="input-group">
+            <div className="input-group" id="search-bar">
                 <input
                     value={valueToSearch}
                     onChange={this.onValueChange}

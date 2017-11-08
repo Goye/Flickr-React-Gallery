@@ -71,26 +71,28 @@ class App extends Component {
                     <SearchView getPhotos={this.getPhotos} />
                 </div>
                 <div className={style.carousel}>
-                    <div className={style.carouselInner} role="listbox">
+                    <div className={style.carouselInner} role="listbox" id="carouselInner">
                         {this.getMainImage(photos)}
                     </div>
                     <a
                         className={`${style.left} ${style.carouselControl}`}
-                        onClick={this.onLeftClick}>
+                        onClick={this.onLeftClick}
+                        id="leftArrow">
                         <span className="glyphicon glyphicon-chevron-left" />
                     </a>
                     <a
                         className={`${style.right} ${style.carouselControl}`}
-                        onClick={this.onRightClick}>
+                        onClick={this.onRightClick}
+                        id="rightArrow">
                         <span className="glyphicon glyphicon-chevron-right" />
                     </a>
                 </div>
-                <div className={`${style.footer} row`}>
+                <div className={`${style.footer} row`} id="thumbnail">
                     {photos.map((photo, key) => (
                         <div className="col-xs-6 col-md-2" key={photo.id}>
                             <a
                                 className={`${currentIndexPhoto === key
-                                    ? style.active
+                                    ? `${style.active} active`
                                     : ''} thumbnail`}
                                 onClick={() => this.onThumbnailClick(key)}>
                                 <img
